@@ -46,6 +46,17 @@
 | Prompt Engineering | ✅ DONE | GPT-4o Vision integration |
 | Data Logic | ✅ DONE | create_contract_from_bill() method |
 
+### 📤 BATCH 2.2: Upload API - **100% COMPLETE**
+
+| Task | Status | Location |
+|------|--------|----------|
+| API: POST /upload/bill | ✅ DONE | `/forbrugeragenten/backend/app/api/v1/endpoints/upload.py` |
+| File Validation | ✅ DONE | Type (JPG/PNG/PDF), Size (10MB max) |
+| AI Integration | ✅ DONE | BillParserService integration |
+| Contract Creation | ✅ DONE | Automatic from parsed data |
+| GET /upload/contracts | ✅ DONE | List user contracts |
+| GET /upload/contracts/{id} | ✅ DONE | Contract details |
+
 ### 📬 BATCH 3.2: The Sorting Hat (AI Logic) - **100% COMPLETE**
 
 | Task | Status | Location |
@@ -81,17 +92,7 @@
 
 ### 🔴 HIGH PRIORITY (Blocking for MVP)
 
-1. **BATCH 1.2: User API Endpoints**
-   - [ ] Implement POST /users with agent_email generation
-   - [ ] Implement GET /users/me with agent_email auto-generation
-   - [ ] Test endpoints with curl/Postman
-
-2. **BATCH 2.2: Upload API**
-   - [ ] Create POST /upload/bill endpoint
-   - [ ] Integrate with BillParserService
-   - [ ] Test with real bill image
-
-3. **BATCH 2.3: Takeover Mail**
+1. **BATCH 2.3: Takeover Mail**
    - [ ] Design HTML email template
    - [ ] Implement send_takeover_request() in EmailService
    - [ ] Connect to onboarding flow
