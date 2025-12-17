@@ -124,14 +124,17 @@ Every article MUST have:
 - ✅ 100% Danish language
 
 ### Tone & Voice (CRITICAL!)
-- **DO:** Hjælpsom, transparent, forbruger-first
-- **DO:** Use "Du" and "Vi" - speak directly to consumer
+- **DO:** Hjælpsom, transparent, forbruger-first, AKTIV
+- **DO:** Use "Du" and "Vi" - we're on the same team against companies
 - **DO:** Focus on concrete savings (kr. amounts)
-- **DO:** Explain complex topics simply
+- **DO:** Active voice: "Vi overvåger", "Vi tjekker", "Vi finder" (not passive explaining)
+- **DO:** Justice frame: "Overpris", "Snigende prisstigninger", "Fejl i regninger"
 - **DON'T:** Aggressive sales tactics ("Kun i dag!", "Skynd dig!")
 - **DON'T:** Technical jargon without explanation
-- **DON'T:** Corporate boring language
+- **DON'T:** Passive voice ("Du kan spare" → Use "Vi finder besparelsen")
 - **DON'T:** Hidden costs or fine print
+
+**Brand Identity:** Vi er forbrugerens økonomiske livvagt - ikke bare en guide, men en aktiv beskytter.
 
 ### Backend Integration (After content is approved)
 ```bash
