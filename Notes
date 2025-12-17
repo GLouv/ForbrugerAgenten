@@ -1,0 +1,57 @@
+
+
+
+What email campaigns / functions do we have?
+- Get product from company + update email ( Full flow with no response edge cases or other ( Agent ))
+- Søg tilbud + Sikre sign up for tilbud er muligt ( link? ). ( Automatisk opdater i dashboardet som de kommer ind + vis top alt efter hvornår de komemr ind )
+- what else?
+
+
+Auth:
+- Brug kun MitId 
+
+Onboarding flow:
+tydeliggør vi opdaterer deres email og samler deres inbox så vi overvåger med dem - så vi kan sikre alt spiller og kan kommunikerer med dem hvis der er problemer
+
+
+Inbox:
+
+De skal kunne sende mails med AI og følge op automatisk, sikre det hele et sted + notifikation når response på mail + om det er ok sende xyz retur eller hvad de vil
+
+
+
+Admin panel:
+
+Ensure all is connected.
+
+Connect users to MitId sign ups
+
+See all emails for each customer in admin within their individual overviews . make customer overviews for each that show all their data in the database - ensure emails are saved in their database
+
+
+
+Make quick website forwarding to app
+
+List on apple
+
+Find test users, pay them 50dkk 
+
+
+
+
+Get overview over all links and where to funnel trafic
+
+
+
+Advantage:
+
+De vil gerne give tilbud og have kunder
+
+De vil ikke savre på mails der får kunder til at skifte
+
+De vil ikke blive bombarberet med kunde henvendelser
+
+^ Behov for fuldt samarbejde / integration
+1. Skift email for kunder med fuldmagt via api
+2. Modtag alle tilbud der er for alle produkter ugentligt 
+3. Modtag kundes produkter via api

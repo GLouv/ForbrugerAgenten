@@ -34,3 +34,4 @@ fi
 echo "🚀 Starting Next.js development server on port $PORT..."
 npm run dev -- -p $PORT
 
+
