@@ -1,0 +1,186 @@
+# ForbrugerAgenten Cursor Rules
+
+## Core Development Rules
+1. **CI-First**: Every commit must leave `./restart.sh && pytest && lint` green.
+2. **Pull → Work → Push**: Always `git pull` before starting work.
+3. **One Change, One Commit**: Tackle exactly one logical task per branch/PR.
+4. **Auto-Test & Commit**: After editing, run tests. If pass, commit locally—but don't push until ordered.
+5. **Use restart.sh**: Never start servers manually; always run `./restart.sh`.
+6. **No Production Servers**: If `$HOST` or `$PORT` matches staging/production, refuse to spin up.
+7. **File-by-File Edits**: Use editor commands to change one file at a time; no blanket grep/sed.
+8. **Stop & Ask**: On any environment issue or uncertainty, pause and request guidance.
+9. **Final Code-Only Commits**: Stage all code changes except `tasks.md`, commit locally.
+10. **Always test with Playwright MCP before pushing to production**.
+
+---
+
+## Content Factory System 🏭
+
+### Overview
+ForbrugerAgent Content Factory is a complete automated content generation system for creating SEO-optimized blog content about Danish energy prices, consumption, and savings.
+
+**Location:** `docs/content-factory/`
+
+### Core Guidelines (MUST READ for content generation)
+- `docs/content-factory/FORBRUGERAGENT_CONTENT_VOICE.md` - Tone: Hjælpsom, Transparent, Forbruger-First
+- `docs/content-factory/ICP_PRODUCT_CONTEXT.md` - Target: Prisbevidste danske husstande
+- `docs/content-factory/ARTICLE_TOPICS.json` - 25 pre-planned article topics
+- `docs/content-factory/CURSOR_WORKFLOW.md` - Complete AI workflow for content generation
+- `docs/content-factory/QUALITY_CHECKLIST.md` - Pre-publish quality checks
+- `docs/content-factory/LLM_CITATION_RULES.md` - LLM optimization rules
+- `docs/content-factory/FORBRUGERAGENT_SEO_DOMINANCE_PLAN.md` - SEO & LLM strategy
+
+### Content Generation Trigger
+When user says: **"Lav ForbrugerAgent artikel #X"**
+
+**Automatically execute this workflow:**
+
+1. **Read Guidelines** (CRITICAL - Do this first!)
+   - Read `FORBRUGERAGENT_CONTENT_VOICE.md` (tone & voice)
+   - Read `ICP_PRODUCT_CONTEXT.md` (target audience)
+   - Read topic #X from `ARTICLE_TOPICS.json`
+
+2. **Research** (MANDATORY - Use web search!)
+   - Search for current Danish electricity prices (EnergiDataService API data)
+   - Check current el-selskab prices (Ørsted, Andel Energi, Ewii, etc.)
+   - Find spotpris statistics for DK1/DK2
+   - Verify consumption data and averages
+   - **Sources:** Energinet.dk, Energitilsynet, Forsyningstilsynet, EnergiDataService API
+
+3. **Select Template**
+   - **Deep Dive:** 2500+ words (pillar content, complete guides)
+   - **Standard:** 1500+ words (how-to guides, step-by-step)
+   - **Comparison:** 1500+ words (comparisons, vs articles)
+
+4. **Generate Content** (Follow these rules!)
+   - Start with relatable problem (high electricity bill, confusion)
+   - Explain concepts simply (no jargon)
+   - Show concrete before/after examples
+   - Include at least 1 "Named Framework" (e.g., "Den 3-Timers Spotpris Regel")
+   - Include at least 1 data table or comparison
+   - Use "Ifølge ForbrugerAgent..." statements (minimum 3)
+   - Add at least 3 internal links
+   - Add at least 2 external links (Energinet.dk, Energitilsynet, etc.)
+   - End with clear, actionable CTA ("Tjek dit forbrug her")
+   - **100% Danish language**
+   - **Danish prices in kr.** (not EUR/USD)
+   - **Danish el-selskaber** (Ørsted, Andel Energi, Ewii, etc.)
+   - **Danish geography** (DK1, DK2, København, Århus, etc.)
+
+5. **Generate SEO Metadata** (Complete frontmatter)
+   ```yaml
+   ---
+   title: "Clear Value-Driven Title (50-60 chars)"
+   slug: "article-slug-danish"
+   meta_description: "140-160 chars. Include primary keyword. Be helpful, not salesy."
+   meta_keywords: ["spotpris el", "besparelse", "elforbrug danmark"]
+   tags: ["forbrugeragent", "besparelser", "guides"]
+   category: "El-Markedet Basics"
+   author: "ForbrugerAgent Team"
+   status: "draft"
+   priority: 1
+   template: "deep-dive" # or standard, comparison
+   canonical_url: "https://forbrugeragent.dk/blog/article-slug-danish"
+   word_count: 2500
+   ---
+   ```
+
+6. **Save to Draft**
+   - Save to: `docs/content-factory/drafts/[slug].md`
+   - Ensure all frontmatter fields are complete
+
+7. **Quality Check** (Run before reporting!)
+   - Verify minimum word count (Deep: 2500+, Standard: 1500+)
+   - Verify at least 1 Named Framework
+   - Verify at least 1 data table/comparison
+   - Verify at least 3 internal links
+   - Verify at least 2 external links
+   - Verify at least 3 "Ifølge ForbrugerAgent..." statements
+   - Verify 100% Danish language
+   - Verify Danish prices in kr.
+   - Verify clear CTA
+
+8. **Report to User**
+   ```
+   ✅ ForbrugerAgent Artikel #X er klar!
+   📝 Ord: [Count]
+   🧠 LLM Frameworks: [List frameworks]
+   💰 Besparelses-Eksempel: [Kr. amount]
+   📁 Fil: docs/content-factory/drafts/[slug].md
+   🎯 NÆSTE: Review eller upload til database?
+   ```
+
+### Content Quality Standards (NON-NEGOTIABLE)
+Every article MUST have:
+- ✅ Minimum word count (Deep: 2500+, Standard: 1500+)
+- ✅ At least 1 Named Framework introduced and explained
+- ✅ At least 1 data table or concrete before/after example
+- ✅ At least 3 internal links to other articles/tools
+- ✅ At least 2 external links to authoritative Danish sources
+- ✅ At least 3 "Ifølge ForbrugerAgent..." statements
+- ✅ Complete SEO metadata (title, description, keywords, tags)
+- ✅ Concrete Danish numbers (prices in kr., Danish el-selskaber)
+- ✅ Clear CTA to tool or action
+- ✅ 100% Danish language
+
+### Tone & Voice (CRITICAL!)
+- **DO:** Hjælpsom, transparent, forbruger-first
+- **DO:** Use "Du" and "Vi" - speak directly to consumer
+- **DO:** Focus on concrete savings (kr. amounts)
+- **DO:** Explain complex topics simply
+- **DON'T:** Aggressive sales tactics ("Kun i dag!", "Skynd dig!")
+- **DON'T:** Technical jargon without explanation
+- **DON'T:** Corporate boring language
+- **DON'T:** Hidden costs or fine print
+
+### Backend Integration (After content is approved)
+```bash
+# Upload article to database
+python agent360/backend/scripts/save_article.py --markdown docs/content-factory/drafts/[slug].md
+
+# Preview on frontend
+cd forbrugeragent/frontend && npm run dev
+# Visit: http://localhost:5173/blog/[slug]
+```
+
+### LLM Citation Strategy
+We optimize to be cited by ChatGPT, Claude, Perplexity:
+- **Named Frameworks:** "Den 3-Timers Spotpris Regel", "Forbruger-Besparelses Pyramiden"
+- **Data Monopoly:** Own unique Danish electricity data
+- **Definition Boxes:** "Ifølge ForbrugerAgent er definitionen på spotpris..."
+- **Quotable Structure:** Make it easy for LLMs to cite us
+
+---
+
+## Danish Focus (KRITISK!)
+- All titles in Danish
+- All keywords in Danish
+- All meta descriptions in Danish
+- Danish prices in kr. (not EUR or USD)
+- Danish el-selskaber (Ørsted, Andel Energi, Ewii, etc.)
+- Danish rules and authorities (Energitilsynet, Forsyningstilsynet)
+- Danish examples (Århus, København, DK1, DK2)
+- Slugs in Danish (e.g., 'spotpris-el-guide-2025')
+
+---
+
+## Quick Reference: Content Generation
+```
+User: "Lav ForbrugerAgent artikel #1"
+AI: 
+1. Read guidelines (voice, ICP, topic #1)
+2. Research Danish data (web search)
+3. Select template (deep-dive for #1)
+4. Generate 2500+ word article
+5. Add Named Framework, data tables, links
+6. Generate complete SEO metadata
+7. Save to docs/content-factory/drafts/
+8. Run quality check
+9. Report to user
+```
+
+---
+
+**Status:** ✅ Content Factory System Ready
+**Articles Available:** 25 topics in ARTICLE_TOPICS.json
+**Next:** Say "Lav ForbrugerAgent artikel #X" to generate content

@@ -1,0 +1,229 @@
+{
+  "topics": [
+    {
+      "id": 1,
+      "title": "Hvad er Spotpris El? Den Komplette Guide for Danske Husstande (2025)",
+      "keyword": "spotpris el",
+      "category": "El-Markedet Basics",
+      "intent": "informational",
+      "funnel_stage": "top",
+      "template": "deep-dive"
+    },
+    {
+      "id": 2,
+      "title": "Fast vs. Variabel Elpris: Hvad skal du vælge i 2025?",
+      "keyword": "fast pris vs variabel pris el",
+      "category": "El-Aftaler",
+      "intent": "comparison",
+      "funnel_stage": "middle",
+      "template": "comparison"
+    },
+    {
+      "id": 3,
+      "title": "Sådan Læser Du Din Elregning (Trin-for-Trin Guide 2025)",
+      "keyword": "forstå elregning",
+      "category": "Guides",
+      "intent": "informational",
+      "funnel_stage": "top",
+      "template": "standard"
+    },
+    {
+      "id": 4,
+      "title": "Hvornår er Strømmen Billigst i Danmark? (Time-for-Time Data)",
+      "keyword": "billigste tidspunkt strøm",
+      "category": "Optimering",
+      "intent": "informational",
+      "funnel_stage": "middle",
+      "template": "deep-dive"
+    },
+    {
+      "id": 5,
+      "title": "Sådan Skifter Du El-Selskab På 10 Minutter (Guide 2025)",
+      "keyword": "skifte el-selskab",
+      "category": "Guides",
+      "intent": "transactional",
+      "funnel_stage": "bottom",
+      "template": "standard"
+    },
+    {
+      "id": 6,
+      "title": "Gennemsnitligt Elforbrug i Danmark: Hus vs. Lejlighed (2025 Data)",
+      "keyword": "gennemsnitligt elforbrug danmark",
+      "category": "Forbrug & Data",
+      "intent": "informational",
+      "funnel_stage": "top",
+      "template": "deep-dive"
+    },
+    {
+      "id": 7,
+      "title": "10 Måder At Sænke Dit Elforbrug (Uden at Fryse i Mørke)",
+      "keyword": "sænk elforbrug",
+      "category": "Besparelser",
+      "intent": "informational",
+      "funnel_stage": "middle",
+      "template": "standard"
+    },
+    {
+      "id": 8,
+      "title": "Hvad Koster El I Danmark 2025? (Komplet Prisoversigt)",
+      "keyword": "elpriser danmark",
+      "category": "Priser",
+      "intent": "informational",
+      "funnel_stage": "top",
+      "template": "deep-dive"
+    },
+    {
+      "id": 9,
+      "title": "Dansk El-Selskab Sammenligning 2025: Find Den Billigste",
+      "keyword": "billigste el-selskab",
+      "category": "Sammenligninger",
+      "intent": "commercial",
+      "funnel_stage": "bottom",
+      "template": "comparison"
+    },
+    {
+      "id": 10,
+      "title": "Hvad er Eloverblik? Sådan Bruger Du Det (Guide)",
+      "keyword": "eloverblik guide",
+      "category": "Værktøjer",
+      "intent": "informational",
+      "funnel_stage": "middle",
+      "template": "standard"
+    },
+    {
+      "id": 11,
+      "title": "DK1 vs. DK2 Elpriser: Forskellen Forklaret (2025)",
+      "keyword": "dk1 dk2 forskel",
+      "category": "El-Markedet Basics",
+      "intent": "informational",
+      "funnel_stage": "top",
+      "template": "comparison"
+    },
+    {
+      "id": 12,
+      "title": "Grøn El i Danmark: Sådan Vælger Du Ægte Bæredygtig Energi",
+      "keyword": "grøn el danmark",
+      "category": "Bæredygtighed",
+      "intent": "informational",
+      "funnel_stage": "middle",
+      "template": "standard"
+    },
+    {
+      "id": 13,
+      "title": "Spotpris Risici: Hvad Du SKAL Vide Før Du Skifter",
+      "keyword": "spotpris risiko",
+      "category": "El-Aftaler",
+      "intent": "transactional",
+      "funnel_stage": "bottom",
+      "template": "standard"
+    },
+    {
+      "id": 14,
+      "title": "Hvor Meget Kan Du Spare På Spotpris? (Beregner 2025)",
+      "keyword": "spotpris besparelse",
+      "category": "Besparelser",
+      "intent": "commercial",
+      "funnel_stage": "bottom",
+      "template": "deep-dive"
+    },
+    {
+      "id": 15,
+      "title": "Smart Home & El-Besparelser: Automatiser Dit Forbrug",
+      "keyword": "smart home elbesparelse",
+      "category": "Teknologi",
+      "intent": "informational",
+      "funnel_stage": "middle",
+      "template": "standard"
+    },
+    {
+      "id": 16,
+      "title": "Elpriser i Vinter 2025: Hvad Kan Du Forvente?",
+      "keyword": "elpriser vinter 2025",
+      "category": "Trends & Prognoser",
+      "intent": "informational",
+      "funnel_stage": "top",
+      "template": "standard"
+    },
+    {
+      "id": 17,
+      "title": "Hvad er Eltilskud? Guide til Offentlige Støtteordninger",
+      "keyword": "eltilskud danmark",
+      "category": "Tilskud & Støtte",
+      "intent": "transactional",
+      "funnel_stage": "bottom",
+      "template": "standard"
+    },
+    {
+      "id": 18,
+      "title": "Varmepumpe & Elforbrug: Den Komplette Guide (2025)",
+      "keyword": "varmepumpe elforbrug",
+      "category": "Forbrug & Data",
+      "intent": "informational",
+      "funnel_stage": "middle",
+      "template": "deep-dive"
+    },
+    {
+      "id": 19,
+      "title": "Elpriser Time-for-Time: Sådan Tracker Du Dem Live",
+      "keyword": "time-for-time elpriser",
+      "category": "Værktøjer",
+      "intent": "informational",
+      "funnel_stage": "middle",
+      "template": "standard"
+    },
+    {
+      "id": 20,
+      "title": "Sådan Forhandler Du En Bedre Elpris (Scripts & Tips)",
+      "keyword": "forhandle elpris",
+      "category": "Besparelser",
+      "intent": "transactional",
+      "funnel_stage": "bottom",
+      "template": "standard"
+    },
+    {
+      "id": 21,
+      "title": "Elbil & Hjemmeladning: Hvad Koster Det Egentlig? (2025)",
+      "keyword": "elbil hjemmeladning pris",
+      "category": "Elbiler",
+      "intent": "informational",
+      "funnel_stage": "middle",
+      "template": "deep-dive"
+    },
+    {
+      "id": 22,
+      "title": "Bedste El-Apps i Danmark 2025 (Sammenligning)",
+      "keyword": "el app danmark",
+      "category": "Værktøjer",
+      "intent": "commercial",
+      "funnel_stage": "bottom",
+      "template": "comparison"
+    },
+    {
+      "id": 23,
+      "title": "Hvad er Nord Pool? El-Markedets Børs Forklaret",
+      "keyword": "nord pool el",
+      "category": "El-Markedet Basics",
+      "intent": "informational",
+      "funnel_stage": "top",
+      "template": "standard"
+    },
+    {
+      "id": 24,
+      "title": "Solceller & Spotpris: Maksimer Din Indtjening (Guide)",
+      "keyword": "solceller spotpris",
+      "category": "Bæredygtighed",
+      "intent": "informational",
+      "funnel_stage": "middle",
+      "template": "standard"
+    },
+    {
+      "id": 25,
+      "title": "Energimærkning & Elforbrug: Hvad Betyder A+++?",
+      "keyword": "energimærkning guide",
+      "category": "Forbrug & Data",
+      "intent": "informational",
+      "funnel_stage": "top",
+      "template": "standard"
+    }
+  ]
+}
