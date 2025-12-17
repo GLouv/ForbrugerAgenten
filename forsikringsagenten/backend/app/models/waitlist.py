@@ -18,3 +18,4 @@ class WaitlistEntry(Base):
     def __repr__(self):
         return f"<WaitlistEntry {self.name} - {self.phone}>"
 
+

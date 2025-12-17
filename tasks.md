@@ -9,12 +9,12 @@ Hvert punkt repræsenterer en konkret handling i koden.
 *Mål: Fundamentet. Brugeren har en agent-mail, og databasen er opdateret til alle features.*
 
 ### 1.1 Database Schema Updates (Pre-requisite)
-- [ ] **Model Update (`Contract`):** Tilføj `contract_file_url` (String) og `last_parsed_at` (DateTime).
-- [ ] **Model Update (`SupportTicket`):** Tilføj `type` (Enum: complaint, switch_request, question, system_notice).
-- [ ] **Migration:** Kør Alembic migration for at opdatere DB med `User`, `Provider`, `Contract`, `SupportTicket` ændringer.
+- [x] **Model Update (`Contract`):** Tilføj `contract_file_url` (String) og `last_parsed_at` (DateTime).
+- [x] **Model Update (`SupportTicket`):** Tilføj `type` (Enum: complaint, switch_request, question, system_notice).
+- [x] **Migration:** Kør Alembic migration for at opdatere DB med `User`, `Provider`, `Contract`, `SupportTicket` ændringer.
 
 ### 1.2 Agent Email Logic
-- [ ] **Backend:** Færdiggør `generate_unique_email` i `AgentMailService` (Navne-rensning + Unikhedstjek).
+- [x] **Backend:** Færdiggør `generate_unique_email` in `AgentMailService` (Navne-rensning + Unikhedstjek).
 - [ ] **API:** Opdater `POST /users` (Signup) og `GET /users/me` til at kalde generatoren, hvis `agent_email` mangler.
 - [ ] **Frontend:** Opdater `Dashboard/page.tsx` til at vise `user.agent_email` med en "Kopier" knap.
 - [ ] **Frontend:** Tilføj "Indstillinger" toggle for `forward_marketing` og `forward_essential`.
@@ -91,6 +91,7 @@ Hvert punkt repræsenterer en konkret handling i koden.
 ---
 
 *Husk: Kør `./restart.sh` og test efter hver Batch.*
+
 
 
 
