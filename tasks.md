@@ -24,9 +24,11 @@ Hvert punkt repræsenterer en konkret handling i koden.
 
 ### 1.2 Agent Email Logic
 - [x] **Backend:** Færdiggør `generate_unique_email` in `AgentMailService` (Navne-rensning + Unikhedstjek).
-  - Location: `/forbrugeragenten/backend/app/services/agent_mail_service.py`
-- [ ] **API:** Opdater `POST /users` (Signup) og `GET /users/me` til at kalde generatoren, hvis `agent_email` mangler.
-  - Location: `/forbrugeragenten/backend/app/api/v1/endpoints/auth.py` (eller users.py)
+  - Location: `/forbrugeragenten/backend/app/services/agent_mail_service.py` ✅
+- [x] **API:** Opdater `POST /users` (Signup) og `GET /users/me` til at kalde generatoren, hvis `agent_email` mangler.
+  - Location: `/forbrugeragenten/backend/app/api/v1/endpoints/auth.py` ✅
+  - Signup: Auto-generates agent_email when creating new user ✅
+  - GET /me: Auto-generates agent_email if missing ✅
 - [ ] **Frontend:** Opdater `Dashboard/page.tsx` til at vise `user.agent_email` med en "Kopier" knap.
   - Location: `/forbrugeragenten/frontend/src/app/dashboard/page.tsx`
 - [ ] **Frontend:** Tilføj "Indstillinger" toggle for `forward_marketing` og `forward_essential`.
