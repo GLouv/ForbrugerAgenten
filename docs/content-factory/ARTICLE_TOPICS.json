@@ -1,229 +1,305 @@
 {
+  "meta": {
+    "version": "2.0",
+    "phase": "Phase 1: The Hunter",
+    "focus": "Killer content only - High conversion articles for El, Mobil, Internet",
+    "total_articles": 20,
+    "priority_system": "⭐⭐⭐ = High-Intent Commercial, ⭐⭐ = Trust & Education, ⭐ = Decision Support"
+  },
   "topics": [
     {
       "id": 1,
-      "title": "Hvad er Spotpris El? Den Komplette Guide for Danske Husstande (2025)",
-      "keyword": "spotpris el",
-      "category": "El-Markedet Basics",
-      "intent": "informational",
-      "funnel_stage": "top",
-      "template": "deep-dive"
+      "title": "Dansk El-Selskab Sammenligning 2025: Find Den Billigste",
+      "keyword": "billigste el-selskab",
+      "category": "El - Sammenligninger",
+      "intent": "commercial",
+      "funnel_stage": "bottom",
+      "template": "comparison",
+      "priority": "⭐⭐⭐",
+      "cta": "Lad os finde den billigste aftale for dig",
+      "conversion_goal": "Upload regning",
+      "production_week": 1
     },
     {
       "id": 2,
-      "title": "Fast vs. Variabel Elpris: Hvad skal du vælge i 2025?",
-      "keyword": "fast pris vs variabel pris el",
-      "category": "El-Aftaler",
-      "intent": "comparison",
-      "funnel_stage": "middle",
-      "template": "comparison"
+      "title": "Hvor Meget Kan Du Spare På Spotpris? (Beregner 2025)",
+      "keyword": "spotpris besparelse",
+      "category": "El - Besparelser",
+      "intent": "commercial",
+      "funnel_stage": "bottom",
+      "template": "deep-dive",
+      "priority": "⭐⭐⭐",
+      "cta": "Upload din regning - vi beregner din besparelse",
+      "conversion_goal": "Upload regning",
+      "production_week": 1
     },
     {
       "id": 3,
-      "title": "Sådan Læser Du Din Elregning (Trin-for-Trin Guide 2025)",
-      "keyword": "forstå elregning",
-      "category": "Guides",
-      "intent": "informational",
-      "funnel_stage": "top",
-      "template": "standard"
+      "title": "Sådan Skifter Du El-Selskab På 10 Minutter (Guide 2025)",
+      "keyword": "skifte el-selskab",
+      "category": "El - Guides",
+      "intent": "transactional",
+      "funnel_stage": "bottom",
+      "template": "standard",
+      "priority": "⭐⭐⭐",
+      "cta": "Vi gør det for dig med MitID",
+      "conversion_goal": "Sign up + MitID",
+      "production_week": 1
     },
     {
       "id": 4,
-      "title": "Hvornår er Strømmen Billigst i Danmark? (Time-for-Time Data)",
-      "keyword": "billigste tidspunkt strøm",
-      "category": "Optimering",
+      "title": "Hvad er Spotpris El? Den Komplette Guide for Danske Husstande (2025)",
+      "keyword": "spotpris el",
+      "category": "El - Markedet Basics",
       "intent": "informational",
-      "funnel_stage": "middle",
-      "template": "deep-dive"
+      "funnel_stage": "top",
+      "template": "deep-dive",
+      "priority": "⭐⭐",
+      "cta": "Se om spotpris er billigere for dig",
+      "conversion_goal": "Calculator usage",
+      "production_week": 3
     },
     {
       "id": 5,
-      "title": "Sådan Skifter Du El-Selskab På 10 Minutter (Guide 2025)",
-      "keyword": "skifte el-selskab",
-      "category": "Guides",
-      "intent": "transactional",
-      "funnel_stage": "bottom",
-      "template": "standard"
+      "title": "Fast vs. Variabel Elpris: Hvad skal du vælge i 2025?",
+      "keyword": "fast vs variabel pris el",
+      "category": "El - Aftaler",
+      "intent": "comparison",
+      "funnel_stage": "middle",
+      "template": "comparison",
+      "priority": "⭐⭐",
+      "cta": "Vi finder den bedste aftale til dit forbrug",
+      "conversion_goal": "Comparison tool usage",
+      "production_week": 3
     },
     {
       "id": 6,
-      "title": "Gennemsnitligt Elforbrug i Danmark: Hus vs. Lejlighed (2025 Data)",
-      "keyword": "gennemsnitligt elforbrug danmark",
-      "category": "Forbrug & Data",
+      "title": "Hvad Koster El I Danmark 2025? (Komplet Prisoversigt)",
+      "keyword": "elpriser danmark",
+      "category": "El - Priser",
       "intent": "informational",
       "funnel_stage": "top",
-      "template": "deep-dive"
+      "template": "deep-dive",
+      "priority": "⭐⭐",
+      "cta": "Tjek om du betaler for meget",
+      "conversion_goal": "Upload regning",
+      "production_week": 5
     },
     {
       "id": 7,
-      "title": "10 Måder At Sænke Dit Elforbrug (Uden at Fryse i Mørke)",
-      "keyword": "sænk elforbrug",
-      "category": "Besparelser",
-      "intent": "informational",
-      "funnel_stage": "middle",
-      "template": "standard"
+      "title": "Spotpris Risici: Hvad Du SKAL Vide Før Du Skifter",
+      "keyword": "spotpris risiko",
+      "category": "El - Aftaler",
+      "intent": "transactional",
+      "funnel_stage": "bottom",
+      "template": "standard",
+      "priority": "⭐",
+      "cta": "Vi overvåger priserne for dig",
+      "conversion_goal": "Sign up",
+      "production_week": 5
     },
     {
       "id": 8,
-      "title": "Hvad Koster El I Danmark 2025? (Komplet Prisoversigt)",
-      "keyword": "elpriser danmark",
-      "category": "Priser",
+      "title": "Sådan Læser Du Din Elregning (Trin-for-Trin Guide 2025)",
+      "keyword": "forstå elregning",
+      "category": "El - Guides",
       "intent": "informational",
       "funnel_stage": "top",
-      "template": "deep-dive"
+      "template": "standard",
+      "priority": "⭐",
+      "cta": "Upload din regning - vi analyserer den",
+      "conversion_goal": "Upload regning",
+      "production_week": 5
     },
     {
       "id": 9,
-      "title": "Dansk El-Selskab Sammenligning 2025: Find Den Billigste",
-      "keyword": "billigste el-selskab",
-      "category": "Sammenligninger",
+      "title": "Billigste Mobilabonnement Danmark 2025 (Sammenligning)",
+      "keyword": "billigste mobilabonnement",
+      "category": "Mobil - Sammenligninger",
       "intent": "commercial",
       "funnel_stage": "bottom",
-      "template": "comparison"
+      "template": "comparison",
+      "priority": "⭐⭐⭐",
+      "cta": "Find det billigste abonnement til dit forbrug",
+      "conversion_goal": "Upload regning",
+      "production_week": 1
     },
     {
       "id": 10,
-      "title": "Hvad er Eloverblik? Sådan Bruger Du Det (Guide)",
-      "keyword": "eloverblik guide",
-      "category": "Værktøjer",
+      "title": "Mobil Dataforbrug: Hvor Meget Har Du Brug For? (Guide 2025)",
+      "keyword": "mobil dataforbrug",
+      "category": "Mobil - Guides",
       "intent": "informational",
       "funnel_stage": "middle",
-      "template": "standard"
+      "template": "standard",
+      "priority": "⭐⭐",
+      "cta": "Vi analyserer dit forbrug og finder billigste pakke",
+      "conversion_goal": "Calculator usage",
+      "production_week": 3
     },
     {
       "id": 11,
-      "title": "DK1 vs. DK2 Elpriser: Forskellen Forklaret (2025)",
-      "keyword": "dk1 dk2 forskel",
-      "category": "El-Markedet Basics",
-      "intent": "informational",
-      "funnel_stage": "top",
-      "template": "comparison"
+      "title": "Sådan Skifter Du Mobiludbyder (Behold Dit Nummer)",
+      "keyword": "skifte mobiludbyder",
+      "category": "Mobil - Guides",
+      "intent": "transactional",
+      "funnel_stage": "bottom",
+      "template": "standard",
+      "priority": "⭐⭐⭐",
+      "cta": "Vi håndterer skiftet for dig",
+      "conversion_goal": "Sign up + MitID",
+      "production_week": 2
     },
     {
       "id": 12,
-      "title": "Grøn El i Danmark: Sådan Vælger Du Ægte Bæredygtig Energi",
-      "keyword": "grøn el danmark",
-      "category": "Bæredygtighed",
-      "intent": "informational",
+      "title": "Mobilabonnement vs. Taletidskort: Hvad Er Billigst?",
+      "keyword": "mobilabonnement eller taletidskort",
+      "category": "Mobil - Sammenligninger",
+      "intent": "comparison",
       "funnel_stage": "middle",
-      "template": "standard"
+      "template": "comparison",
+      "priority": "⭐⭐",
+      "cta": "Vi finder den billigste løsning for dig",
+      "conversion_goal": "Comparison tool usage",
+      "production_week": 4
     },
     {
       "id": 13,
-      "title": "Spotpris Risici: Hvad Du SKAL Vide Før Du Skifter",
-      "keyword": "spotpris risiko",
-      "category": "El-Aftaler",
-      "intent": "transactional",
-      "funnel_stage": "bottom",
-      "template": "standard"
+      "title": "5G i Danmark: Er Det Værd At Betale Ekstra For?",
+      "keyword": "5g danmark pris",
+      "category": "Mobil - Teknologi",
+      "intent": "informational",
+      "funnel_stage": "middle",
+      "template": "standard",
+      "priority": "⭐",
+      "cta": "Se 5G-abonnementer og priser",
+      "conversion_goal": "Comparison tool usage",
+      "production_week": 6
     },
     {
       "id": 14,
-      "title": "Hvor Meget Kan Du Spare På Spotpris? (Beregner 2025)",
-      "keyword": "spotpris besparelse",
-      "category": "Besparelser",
+      "title": "Skjulte Gebyrer i Mobilabonnementer: Vi Finder Dem",
+      "keyword": "skjulte gebyrer mobil",
+      "category": "Mobil - Beskyttelse",
       "intent": "commercial",
-      "funnel_stage": "bottom",
-      "template": "deep-dive"
+      "funnel_stage": "middle",
+      "template": "standard",
+      "priority": "⭐⭐",
+      "cta": "Upload din regning - vi tjekker for gebyrer",
+      "conversion_goal": "Upload regning",
+      "production_week": 2
     },
     {
       "id": 15,
-      "title": "Smart Home & El-Besparelser: Automatiser Dit Forbrug",
-      "keyword": "smart home elbesparelse",
-      "category": "Teknologi",
-      "intent": "informational",
-      "funnel_stage": "middle",
-      "template": "standard"
+      "title": "Billigste Internet Danmark 2025 (Sammenligning)",
+      "keyword": "billigste internet",
+      "category": "Internet - Sammenligninger",
+      "intent": "commercial",
+      "funnel_stage": "bottom",
+      "template": "comparison",
+      "priority": "⭐⭐⭐",
+      "cta": "Find billigste internet til din adresse",
+      "conversion_goal": "Address check + comparison",
+      "production_week": 2
     },
     {
       "id": 16,
-      "title": "Elpriser i Vinter 2025: Hvad Kan Du Forvente?",
-      "keyword": "elpriser vinter 2025",
-      "category": "Trends & Prognoser",
+      "title": "Bredbåndshastighed: Hvor Meget Har Du Brug For?",
+      "keyword": "bredbåndshastighed behov",
+      "category": "Internet - Guides",
       "intent": "informational",
-      "funnel_stage": "top",
-      "template": "standard"
+      "funnel_stage": "middle",
+      "template": "standard",
+      "priority": "⭐⭐",
+      "cta": "Vi finder den rigtige hastighed til bedste pris",
+      "conversion_goal": "Calculator usage",
+      "production_week": 4
     },
     {
       "id": 17,
-      "title": "Hvad er Eltilskud? Guide til Offentlige Støtteordninger",
-      "keyword": "eltilskud danmark",
-      "category": "Tilskud & Støtte",
+      "title": "Sådan Skifter Du Internetudbyder (Uden Nedetid)",
+      "keyword": "skifte internetudbyder",
+      "category": "Internet - Guides",
       "intent": "transactional",
       "funnel_stage": "bottom",
-      "template": "standard"
+      "template": "standard",
+      "priority": "⭐⭐⭐",
+      "cta": "Vi koordinerer skiftet for dig",
+      "conversion_goal": "Sign up + MitID",
+      "production_week": 2
     },
     {
       "id": 18,
-      "title": "Varmepumpe & Elforbrug: Den Komplette Guide (2025)",
-      "keyword": "varmepumpe elforbrug",
-      "category": "Forbrug & Data",
-      "intent": "informational",
+      "title": "Fiber vs. Kobbernet: Hvad Er Forskellen? (2025)",
+      "keyword": "fiber vs kobbernet",
+      "category": "Internet - Teknologi",
+      "intent": "comparison",
       "funnel_stage": "middle",
-      "template": "deep-dive"
+      "template": "comparison",
+      "priority": "⭐⭐",
+      "cta": "Tjek hvilke forbindelser der er tilgængelige hos dig",
+      "conversion_goal": "Address check",
+      "production_week": 4
     },
     {
       "id": 19,
-      "title": "Elpriser Time-for-Time: Sådan Tracker Du Dem Live",
-      "keyword": "time-for-time elpriser",
-      "category": "Værktøjer",
-      "intent": "informational",
+      "title": "Kampagnepriser på Internet: Hvad Sker Efter 6 Måneder?",
+      "keyword": "kampagnepris internet",
+      "category": "Internet - Beskyttelse",
+      "intent": "commercial",
       "funnel_stage": "middle",
-      "template": "standard"
+      "template": "standard",
+      "priority": "⭐⭐",
+      "cta": "Vi overvåger når kampagnen udløber",
+      "conversion_goal": "Sign up",
+      "production_week": 6
     },
     {
       "id": 20,
-      "title": "Sådan Forhandler Du En Bedre Elpris (Scripts & Tips)",
-      "keyword": "forhandle elpris",
-      "category": "Besparelser",
-      "intent": "transactional",
-      "funnel_stage": "bottom",
-      "template": "standard"
-    },
-    {
-      "id": 21,
-      "title": "Elbil & Hjemmeladning: Hvad Koster Det Egentlig? (2025)",
-      "keyword": "elbil hjemmeladning pris",
-      "category": "Elbiler",
-      "intent": "informational",
+      "title": "Internet + TV Pakker: Er Det Værd At Bundte?",
+      "keyword": "internet tv pakke",
+      "category": "Internet - Sammenligninger",
+      "intent": "comparison",
       "funnel_stage": "middle",
-      "template": "deep-dive"
-    },
-    {
-      "id": 22,
-      "title": "Bedste El-Apps i Danmark 2025 (Sammenligning)",
-      "keyword": "el app danmark",
-      "category": "Værktøjer",
-      "intent": "commercial",
-      "funnel_stage": "bottom",
-      "template": "comparison"
-    },
-    {
-      "id": 23,
-      "title": "Hvad er Nord Pool? El-Markedets Børs Forklaret",
-      "keyword": "nord pool el",
-      "category": "El-Markedet Basics",
-      "intent": "informational",
-      "funnel_stage": "top",
-      "template": "standard"
-    },
-    {
-      "id": 24,
-      "title": "Solceller & Spotpris: Maksimer Din Indtjening (Guide)",
-      "keyword": "solceller spotpris",
-      "category": "Bæredygtighed",
-      "intent": "informational",
-      "funnel_stage": "middle",
-      "template": "standard"
-    },
-    {
-      "id": 25,
-      "title": "Energimærkning & Elforbrug: Hvad Betyder A+++?",
-      "keyword": "energimærkning guide",
-      "category": "Forbrug & Data",
-      "intent": "informational",
-      "funnel_stage": "top",
-      "template": "standard"
+      "template": "comparison",
+      "priority": "⭐",
+      "cta": "Vi sammenligner bundtede vs. separate aftaler",
+      "conversion_goal": "Comparison tool usage",
+      "production_week": 6
     }
-  ]
+  ],
+  "production_schedule": {
+    "week_1_2": {
+      "focus": "High-Intent Commercial (Direct Conversions)",
+      "articles": [1, 2, 3, 9, 11, 14, 15, 17],
+      "goal": "Drive uploads and sign-ups"
+    },
+    "week_3_4": {
+      "focus": "Trust & Education (Authority Building)",
+      "articles": [4, 5, 10, 12, 16, 18],
+      "goal": "Build trust and top-of-funnel traffic"
+    },
+    "week_5_6": {
+      "focus": "Decision Support & Protection",
+      "articles": [6, 7, 8, 13, 19, 20],
+      "goal": "Tackle objections and build trust"
+    }
+  },
+  "success_metrics": {
+    "content_performance": {
+      "high_priority": "7 articles (⭐⭐⭐) → Target: 60% of total traffic",
+      "high_value": "9 articles (⭐⭐) → Target: 30% of total traffic",
+      "support": "4 articles (⭐) → Target: 10% of total traffic"
+    },
+    "conversion_goals": {
+      "upload_rate": "15% of readers upload bill",
+      "signup_rate": "25% of uploaders create account",
+      "total_conversion": "3.75% from article → account"
+    },
+    "traffic_goals": {
+      "month_1": "5,000 organic visitors",
+      "month_3": "15,000 organic visitors",
+      "month_6": "50,000 organic visitors"
+    }
+  }
 }
