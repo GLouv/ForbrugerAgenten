@@ -48,9 +48,11 @@ Hvert punkt repræsenterer en konkret handling i koden.
   - Location: `bill_parser_service.py` linje 88-116 ✅ DONE
 
 ### 2.2 API & Frontend
-- [ ] **API:** Opret `POST /api/v1/upload/bill`. Skal håndtere fil-upload -> Parser -> DB Save.
-  - Location: `/forbrugeragenten/backend/app/api/v1/endpoints/upload.py` (skal laves)
-  - Integration: Brug `BillParserService.parse_bill()` og `create_contract_from_bill()`
+- [x] **API:** Opret `POST /api/v1/upload/bill`. Skal håndtere fil-upload -> Parser -> DB Save.
+  - Location: `/forbrugeragenten/backend/app/api/v1/endpoints/upload.py` ✅ DONE
+  - Integration: Brug `BillParserService.parse_bill()` og `create_contract_from_bill()` ✅
+  - Additional endpoints: `GET /upload/contracts`, `GET /upload/contracts/{id}` ✅
+  - Features: File validation (type, size), AI parsing, contract creation ✅
 - [ ] **Frontend:** Byg "Dropzone" komponent i Onboarding flowet.
   - Location: `/forbrugeragenten/frontend/src/components/Dropzone.tsx` (skal laves)
 - [ ] **Frontend:** Byg "Upload Regning" knap i Dashboardet (til løbende opdatering).
