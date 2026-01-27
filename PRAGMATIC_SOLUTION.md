@@ -113,7 +113,7 @@ VALUES (
   'Super Admin',
   'super_admin',
   true,
-  '$2b$04$tFS1JIi2irIkTBD0q0SS7uEd09spUPR2NGHQNTlF9/bQSpUBZveAG',
+  'REDACTED_PASSWORD_HASH',
   NOW(),
   NOW()
 );

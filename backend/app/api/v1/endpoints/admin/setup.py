@@ -56,7 +56,7 @@ async def create_admin_endpoint(
         
         # Pre-computed hash for Admin123! (bcrypt rounds=4, ultra fast)
         # Generated locally to avoid slow hashing on Railway
-        password_hash = "$2b$04$tFS1JIi2irIkTBD0q0SS7uEd09spUPR2NGHQNTlF9/bQSpUBZveAG"
+        password_hash = "REDACTED_PASSWORD_HASH"
         
         # Create admin with raw SQL for maximum speed
         admin_id = str(uuid.uuid4())

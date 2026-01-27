@@ -26,7 +26,7 @@ VALUES (
   'Super Admin',
   'super_admin',
   true,
-  '$2b$12$LQv3c1yqBWcVWvvYNBWQse.OYEkQMk3e4k6o3CzPDhNKN7vD8vBqy',
+  'REDACTED_PASSWORD_HASH',
   NOW(),
   NOW()
 );

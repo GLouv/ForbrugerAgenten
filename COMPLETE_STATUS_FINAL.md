@@ -203,7 +203,7 @@ VALUES (
   'Super Admin',
   'super_admin',
   true,
-  '$2b$12$LQv3c1yqBWcVWvvYNBWQse.OYEkQMk3e4k6o3CzPDhNKN7vD8vBqy', -- hashed: Admin123!
+  'REDACTED_PASSWORD_HASH', -- hashed: Admin123!
   NOW(),
   NOW()
 );
@@ -424,7 +424,7 @@ VALUES (
   'Super Admin',
   'super_admin',
   true,
-  '$2b$12$LQv3c1yqBWcVWvvYNBWQse.OYEkQMk3e4k6o3CzPDhNKN7vD8vBqy',
+  'REDACTED_PASSWORD_HASH',
   NOW(),
   NOW()
 );

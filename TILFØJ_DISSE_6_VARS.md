@@ -21,7 +21,7 @@ gpt-4
 
 ### 3️⃣ AUTH0_CLIENT_SECRET
 ```
-54zSwHxNOk-24ZGEG9XpEDUGeG0V4i5O_IgX5P3UHgJQ7E2WJjXWQQNgiS0pckOG
+REDACTED_AUTH0_CLIENT_SECRET
 ```
 
 ### 4️⃣ AUTH0_API_IDENTIFIER (tjek om den hedder AUTH0_API_... allerede)
@@ -31,7 +31,7 @@ https://api.forbrugeragent.dk
 
 ### 5️⃣ AUTH0_CLIENT_ID (tjek om den hedder AUTH0_CLIE... allerede)
 ```
-IDpoVPxWlD4DkeUAxw4cTnI5Liy4Trls
+REDACTED_AUTH0_CLIENT_ID
 ```
 
 ### 6️⃣ AUTH0_DOMAIN (tjek om den hedder AUTH0_DOMA... allerede)

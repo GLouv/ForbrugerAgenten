@@ -59,7 +59,7 @@ Value: agent360.eu.auth0.com
 
 ```
 Name: AUTH0_CLIENT_ID
-Value: IDpoVPxWlD4DkeUAxw4cTnI5Liy4Trls
+Value: REDACTED_AUTH0_CLIENT_ID
 ```
 
 **Klik "Add"**
@@ -72,7 +72,7 @@ Value: IDpoVPxWlD4DkeUAxw4cTnI5Liy4Trls
 
 ```
 Name: AUTH0_CLIENT_SECRET
-Value: 54zSwHxNOk-24ZGEG9XpEDUGeG0V4i5O_IgX5P3UHgJQ7E2WJjXWQQNgiS0pckOG
+Value: REDACTED_AUTH0_CLIENT_SECRET
 ```
 
 **Klik "Add"**
