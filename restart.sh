@@ -21,8 +21,8 @@ echo "   Target: localhost:$PORT"
 echo "🛑 Stopping any existing servers on port $PORT..."
 lsof -ti:$PORT | xargs kill -9 2>/dev/null || true
 
-# Navigate to the web directory (public-facing website)
-cd "$(dirname "$0")/web"
+# Navigate to the root directory (where marketing site now lives)
+cd "$(dirname "$0")"
 
 # Check if node_modules exists
 if [ ! -d "node_modules" ]; then
@@ -33,5 +33,8 @@ fi
 # Start the dev server
 echo "🚀 Starting Next.js development server on port $PORT..."
 npm run dev -- -p $PORT
+
+
+
 
 

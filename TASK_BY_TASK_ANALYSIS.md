@@ -224,3 +224,6 @@ WHERE table_name = 'support_tickets' AND column_name = 'type';
 A. Konsolider til `/forsikringsagenten` og fortsæt der? (ANBEFALET)
 B. Fortsæt i `/forbrugeragenten` og ignorer `/forsikringsagenten`?
 C. Noget helt tredje?
+
+
+

@@ -1,0 +1,303 @@
+# ForsikringsAgenten - Development Notes
+
+## 🎯 Current Status
+**PHASE:** Product Discovery & Legal Clarification  
+**DATE:** October 9, 2025
+
+## ⚠️ CRITICAL: Juridisk Afklaring Nødvendig
+**SE:** `LEGAL_ANALYSIS.md` for fuld gennemgang
+
+**Hovedspørgsmål:**
+- Skal vi have forsikringsmægler licens fra Finanstilsynet?
+- Kan vi indhente tilbud på vegne af kunder uden licens?
+- Kan AI rådgivning klassificeres som forsikringsformidling?
+
+**Action:** Kontakt forsikringsadvokat INDEN mere udvikling!
+
+---
+
+## 🎙️ Voice AI Koncept (Under Overvejelse)
+
+### Idé
+Voice AI der snakker med KUNDEN (ikke forsikringsselskaberne) om deres forsikringsbehov.
+
+### Use Cases
+1. **Behovsafdækning** - Erstatter kedelige forms med naturlig samtale
+2. **Forsikringsrådgivning** - "Jeg er gravid, hvad skal jeg ændre?"
+3. **Skaderapportering** - Guide gennem skadeindmeldelse step-by-step
+4. **Årlig Review** - Gennemgang af alle policer
+
+### Fordele
+- 85-95% completion rate (vs 60-70% for forms)
+- Bedre data kvalitet (dybere indsigt)
+- Accessibility (ældre brugere elsker det)
+- Differentiation (konkurrenter har kun forms)
+- Emotional connection
+
+### Lovgivningsmæssige Overvejelser
+⚠️ **VIGTIGT:** Datatilsynet har kritiseret IDA Forsikring for AI analyse af telefonsamtaler!
+
+**Krav:**
+- Eksplicit samtykke INDEN samtale
+- "Denne samtale optages og analyseres af AI"
+- Ret til at slette optagelse
+- Kryptering af optagelser
+- Kun brug til aftalt formål
+
+### Tekniske Optioner
+1. **Real-time calls** ($0.10-0.20/min)
+   - Vapi.ai (anbefalet)
+   - OpenAI Realtime API + Twilio
+   - ElevenLabs + GPT-4
+
+2. **Async voice messages** ($0.05-0.10/message)
+   - WhatsApp-style
+   - Lavere pressure
+   - Billigere
+
+3. **Hybrid** (Best of both)
+   - Tilbyd begge
+   - A/B test
+   - Lad brugeren vælge
+
+### Business Case
+**Cost per conversation:** ~$1.50-2.00 (10 min)  
+**ROI:**
+- Højere completion rate = flere kunder
+- Bedre data = bedre tilbud = højere revenue
+- Premium feature = justify højere price point
+
+---
+
+## 📊 Vector Database (Qdrant)
+
+### Formål
+"Andreas' knowledge bank" - AI agent kan huske:
+- Tidligere samtaler med brugeren
+- Brugerens præferencer
+- Forsikringskoncept forklaringer
+- Best practices fra andre samtaler
+
+### Hvorfor Vector DB?
+- Semantisk søgning ("find lignende situationer")
+- Ikke kun keyword matching
+- Skalerer til millioner af dokumenter
+- Hurtig retrieval (<100ms)
+
+### Arkitektur
+```
+User spørgsmål
+    ↓
+OpenAI embedding (vektorisering)
+    ↓
+Qdrant search (find relevant context)
+    ↓
+GPT-4 + context → Svar
+```
+
+### Hvad gemmes?
+1. **User-specific:**
+   - Samtalehistorik
+   - Præferencer ("jeg kan lide lav selvrisiko")
+   - Livsbegivenheder ("jeg fik barn i 2024")
+
+2. **Global knowledge:**
+   - Forsikringstyper & dækninger
+   - Common Q&A
+   - Lovgivning & regler
+   - Best practices
+
+### Privacy Considerations
+⚠️ **GDPR:**
+- Krypter vektorer
+- User isolation (kan ikke se andres data)
+- Ret til sletning (delete all vectors for user)
+- Anonymiser hvis muligt
+
+---
+
+## 🔄 Mulige Forretningsmodeller
+
+### A) Pure Comparison Site ✅ SAFEST
+**What:**
+- Sammenlign forsikringer (neutral info)
+- Ingen rådgivning
+- Bruger kontakter selv selskaber
+
+**Revenue:**
+- Freemium (99-299 DKK/måned)
+- Lead generation (betaling per qualified lead)
+
+**Pros:**
+- Ingen licens nødvendig
+- Hurtigst time-to-market
+- Laveste juridiske risiko
+
+**Cons:**
+- Mindre differentiation
+- Lavere værdi for bruger
+- Konkurrence fra price comparison sites
+
+---
+
+### B) Partnerskab med Mægler 💡 RECOMMENDED
+**What:**
+- VI: Bygger platform (tech + AI)
+- PARTNER: Håndterer forsikringsformidling (har licens)
+- Revenue share model
+
+**Revenue:**
+- 50/50 split af provision fra selskaber
+- Eller: Vi tager SaaS fee, de får provision
+
+**Pros:**
+- Best of both worlds
+- Juridisk sikkerhed
+- Hurtigere market entry
+- Kan tilbyde fuld service
+
+**Cons:**
+- Afhængig af partner
+- Deler revenue
+- Skal finde den rigtige partner
+
+---
+
+### C) B2B SaaS for Mæglere 🎯 PIVOT OPTION
+**What:**
+- Sælg platformen til eksisterende forsikringsmæglere
+- De bruger vores AI + tech til deres kunder
+- Vi bliver "Salesforce for forsikringsmæglere"
+
+**Revenue:**
+- SaaS: 2.000-5.000 DKK/måned per mægler
+- Enterprise: Custom pricing
+
+**Pros:**
+- Ingen endbruger licens/GDPR risiko
+- Højere margins (B2B)
+- Recurring revenue
+- Skalerbart
+
+**Cons:**
+- Længere sales cycle
+- Skal sælge til erhverv
+- Mindre "sexy" end B2C
+
+---
+
+### D) Fuld Licens ⚠️ SLOWEST
+**What:**
+- Få forsikringsmægler licens fra Finanstilsynet
+- Ansæt certificeret personale
+- Fuld compliance
+
+**Cost:**
+- Opstart: 300.000-500.000 DKK
+- Årligt: 200.000-300.000 DKK
+- Time: 6-12 måneder
+
+**Only if:**
+- I har funding
+- Langsigtede ambitioner
+- Vil eje hele value chain
+
+---
+
+## 📝 Action Items
+
+### 🚨 KRITISK (Denne uge)
+- [ ] Kontakt forsikringsadvokat (få vurdering af forretningsmodel)
+- [ ] Kontakt Finanstilsynet (spørg direkte om licenskrav)
+- [ ] Beslut: Hvilken forretningsmodel baseret på juridisk feedback
+
+### ⚠️ HØJTPRIORITERET (Næste 2 uger)
+- [ ] Hvis ingen licens: Start DPIA (Data Protection Impact Assessment)
+- [ ] Hvis licens nødvendig: Evaluer partnerskab vs. egen licens
+- [ ] Udarbejd privacy policy (GDPR compliant)
+- [ ] Udarbejd terms of service
+- [ ] Fuldmagtserklæring (email kommunikation)
+
+### 🔄 MEDIUM (Måned 1)
+- [ ] Implementer Privacy by Design features
+  - [ ] End-to-end encryption
+  - [ ] Audit logging
+  - [ ] Auto-deletion af gamle data
+  - [ ] 2FA
+- [ ] DPA aftaler med alle services (Azure, OpenAI, Resend)
+- [ ] Security audit af nuværende kode
+- [ ] Voice AI proof of concept (hvis juridisk ok)
+
+### 📊 BACKLOG
+- [ ] A/B test voice vs. form (hvis vi laver voice)
+- [ ] MitID integration (via Criipto)
+- [ ] Email forwarding implementation
+- [ ] Background jobs for email monitoring
+- [ ] PDF parsing med OpenAI
+
+---
+
+## 🔗 Vigtige Links
+
+**Lovgivning:**
+- Finanstilsynet: https://finanstilsynet.dk
+- Datatilsynet: https://datatilsynet.dk
+- Forsikring & Pension: https://forsikringogpension.dk
+
+**Kontakt:**
+- Finanstilsynet: finanstilsynet@ftnet.dk / 33 55 82 82
+- Datatilsynet: dt@datatilsynet.dk / 33 19 32 00
+
+**Dokumenter:**
+- LEGAL_ANALYSIS.md - Fuld juridisk gennemgang
+- projectOverview.md - Projekt status
+- gdprComplianceAttention.md - GDPR checklist
+
+---
+
+## 💡 Key Insights
+
+**Fra juridisk research:**
+1. Forsikringsformidling er stærkt reguleret (med god grund)
+2. GDPR compliance er ikke optional - det er LAW
+3. AI regulering bliver strammere (EU AI Act 2025-2026)
+4. Fuldmagt er ok, MEN skal være eksplicit og specifik
+5. Voice AI + optagelse kræver særligt samtykke
+
+**Fra voice AI research:**
+1. 85-95% completion rate (væsentligt bedre end forms!)
+2. Ældre brugere elsker det (accessibility)
+3. Bedre data kvalitet = bedre anbefalinger
+4. Differentiation fra konkurrenter
+5. Men: Dyrere at køre end text chat
+
+**Fra market research:**
+1. Alle har forsikringer (kæmpe marked)
+2. De fleste er utilfredse med deres forsikringsoplevelse
+3. Price comparison sites findes (men ingen med AI voice)
+4. Mæglere er gamle/slow (plads til disruption)
+5. Men: Meget regulering (med vilje)
+
+---
+
+## 🎯 Recommended Path Forward
+
+**IF juridisk ok:**
+1. Start med **Hybrid model** (voice + form)
+2. A/B test hvilket brugere foretrækker
+3. Double down på det der virker
+4. Partner med mægler for forsikringsformidling
+5. Vi fokuserer på UX/tech, de håndterer compliance
+
+**IF juridisk problematisk:**
+1. Pivot til **B2B SaaS** for eksisterende mæglere
+2. Eller: **Pure comparison** site uden rådgivning
+3. Byg platformen, sælg til dem der har licensen
+4. Mindre sexy, men juridisk safe + profitable
+
+**Bottom line:**
+Don't build more until legal clarity! 🛡️
+
+---
+
+Last updated: October 9, 2025

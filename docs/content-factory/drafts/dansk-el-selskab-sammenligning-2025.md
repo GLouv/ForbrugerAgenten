@@ -407,3 +407,6 @@ Hvis du vil skifte:
 **Kilde:** ForbrugerAgent analyse af 25+ danske el-selskaber
 
 *Vi opdaterer denne sammenligning dagligt for at sikre du altid har de nyeste priser.*
+
+
+

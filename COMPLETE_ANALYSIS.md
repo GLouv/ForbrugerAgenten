@@ -278,3 +278,6 @@ Start med Dashboard i `/forsikringsagenten/app/dashboard/page.tsx`
 3. Skal vi beholde `/web` som separat marketing site? (JA - det giver mening)
 
 **Når du har besluttet, fortsætter jeg med at implementere den valgte strategi.**
+
+
+

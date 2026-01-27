@@ -223,3 +223,6 @@ uvicorn main:app --reload
 5. **Commit ofte:** Efter hver feature
 
 **God fornøjelse! 🎉**
+
+
+

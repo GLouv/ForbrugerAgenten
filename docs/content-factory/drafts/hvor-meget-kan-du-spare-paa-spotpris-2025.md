@@ -184,3 +184,6 @@ Nej. Det er gratis at uploade din regning og se din besparelse.
 ---
 
 **Kilde:** *ForbrugerAgent Analyse 2024-2025, baseret på data fra Forsyningstilsynet og EnergiDataService.*
+
+
+

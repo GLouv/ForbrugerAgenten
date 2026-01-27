@@ -197,3 +197,6 @@
 - **API:** Mange endpoints eksisterer allerede, men mangler frontend integration
 
 **Estimated Time to MVP:** 10-15 timer
+
+
+
